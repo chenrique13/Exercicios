@@ -1,19 +1,31 @@
-package pacoteExercicios;
+package ex1;
+
 import java.util.Scanner;
-public class Exercicio1 {
-    public static void main(String [] args){
-	    int n1, n2, n3, n4, s;    
-	    Scanner entrada = new Scanner(System.in);    
-        System.out.print("Digite o valor 1: ");
-        n1 = entrada.nextInt();
-        System.out.print("Digite o valor 2: ");
-        n2 = entrada.nextInt();
-        System.out.print("Digite o valor 3: ");
-        n3 = entrada.nextInt();
-        System.out.print("Digite o valor 4: ");
-        n4 = entrada.nextInt();
-        s = n1 + n2 + n3 + n4;
-        System.out.print("A soma entre os quatros valores vale " + s);
-        entrada.close();
-    }    
+
+public class Ex1 {
+
+	public static void main(String[] args) {
+	
+		Scanner scanner = new Scanner(System.in);
+		
+		int a;
+		int b;
+		int c;
+		int d;
+		
+		System.out.println("Digite o primeiro numero: ");
+		a = scanner.nextInt();
+		
+		System.out.println("Digite o segundo numero: ");
+		b = scanner.nextInt();
+		
+		c = a%b;
+		d = a/b;
+		
+		System.out.println(a + " / " + b 
+				+ " o resultado da divisao é " + d
+				+ " e o resto da divisao é " + c);
+		
+	}
+
 }

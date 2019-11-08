@@ -1,15 +1,31 @@
-package pacoteExercicios;
+package ex1;
 
 import java.util.Scanner;
 
-public class Exercicio4 {
+public class Ex4 {
+
 	public static void main(String[] args) {
-		double s, ns;
-		Scanner entrada = new Scanner(System.in);
-		System.out.print("Digite o valor do salário: ");
-		s = entrada.nextDouble();
-		ns = s * 1.25;
-		System.out.print("Seu salário que era " + s + " reajustado será " + ns);
-		entrada.close();
+
+		Scanner scanner = new Scanner(System.in);
+
+		int a;
+		int b;
+		int c;
+
+		System.out.println("Digite um numero: ");
+
+		for (a = scanner.nextInt(); a < 1000; a++) {
+
+			b = a % 2;
+			c = a % 3;
+
+			if ((b != 0) && (c == 0)) {
+				System.out.println("impares e multiplos de 3: ");
+				System.out.println(a);
+			} else {
+			System.out.println("Numero invalido");
+			}
+		}
 	}
+
 }

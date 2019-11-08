@@ -1,17 +1,29 @@
-package pacoteExercicios;
+package ex1;
+
 import java.util.Scanner;
-public class Exercicio2 {
-    public static void main(String[] args) {
-	    double n1, n2, n3, m;
-	    Scanner entrada = new Scanner(System.in);
-	    System.out.print("Digite sua nota 1: ");
-	    n1 = entrada.nextDouble();
-	    System.out.print("Digite a sua nota 2: ");
-	    n2 = entrada.nextDouble();
-	    System.out.print("Digite a sua nota 3: ");
-	    n3 = entrada.nextDouble();
-	    m = (n1 + n2 + n3) / 3.0;
-	    System.out.print("A mÃ©dia entre as trÃªs notas vale " + m);
-	    entrada.close();
-}
+
+public class Ex2 {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+
+		int a;
+		int b;
+
+		System.out.println("Digite o primeiro numero: ");
+		a = scanner.nextInt();
+
+		System.out.println("Digite o segundo numero: ");
+		b = scanner.nextInt();
+
+		if (a > b) {
+			System.out.println("O maior numero é: " + a);
+		} else if (b > a){
+			System.out.println("O maior numero é: " + b);
+		}else {
+			System.out.println("Os numeros sao iguais");
+		}
+
+	}
 }
